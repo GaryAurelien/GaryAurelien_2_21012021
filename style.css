@@ -5,3 +5,19 @@ header
     align-items: center;
     justify-content: space-between;
 }
+
+.packfooter
+{
+    display: flex;
+    border: solid 1px blue;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav
+{
+    display: flex;
+    border: solid 1px red; 
+    align-items: center;
+    justify-content: space-between;
+}
