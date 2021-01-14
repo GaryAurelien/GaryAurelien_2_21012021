@@ -1,6 +1,7 @@
-#entete
+header
 {
-	position: absolute;
-    right: 100px;
-    bottom: 825px;	
+    display: flex;
+    border: solid 1px red; 
+    align-items: center;
+    justify-content: space-between;
 }
