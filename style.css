@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
 }
 
-h1 ,a ,p
+h1 ,h2 ,a ,p
 {
     font-family: 'Raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;
     color: black;
@@ -16,7 +16,7 @@ h1 ,a ,p
     color: #0065FC;
 }
 
-p ,a
+p ,a ,h2
 {
     font-size: 14px;
 }
@@ -49,15 +49,6 @@ header
 {
     text-decoration: none;
 }
-
-.packfooter
-{
-    display: flex;
-    border: solid 1px blue;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .pack1
 {
     border: solid 1px blue;
@@ -97,3 +88,41 @@ a:hover
    text-decoration: underline;
    color: #DEEBFF;
 }
+.hebergements_a_marseille
+{
+    display: flex;
+    border: solid 1px red; 
+    align-items: center;
+    justify-content: space-between;
+}
+.les_plus_populaires
+{
+    display: flex;
+    border: solid 1px red; 
+    align-items: center;
+    justify-content: space-between;
+}
+.activités_a_marseille
+{
+    display: flex;
+    border: solid 1px red; 
+    align-items: center;
+    justify-content: space-between;
+}
+.packfooter
+{
+    display: flex;
+    border: solid 1px blue;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
