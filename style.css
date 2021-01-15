@@ -1,3 +1,20 @@
+@font-face
+{
+    font-family: 'Raleway', sans-serif;
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+}
+
+h1 ,a ,p
+{
+    font-family: 'Raleway', Impact, "Arial Black", Arial, Verdana, sans-serif;
+    color: black;
+}
+
+.inscrire
+{
+    color: #0065FC;
+}
 
 p ,a
 {
@@ -20,6 +37,17 @@ header
     border: solid 1px red; 
     align-items: center;
     justify-content: space-between;
+}
+
+.ham
+{
+    text-decoration: overline;
+    color: #0065FC;
+}
+
+.aam ,.inscrire
+{
+    text-decoration: none;
 }
 
 .packfooter
@@ -56,8 +84,12 @@ nav
 .a1
 {
     display: flex;
-    border: solid 1px yellow;
-    justify-content: space-around;
+    border: solid 1px yellow;  
+}
+
+.a2
+{
+    text-decoration: none;
 }
 
 a:hover
