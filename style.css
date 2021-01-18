@@ -46,10 +46,17 @@ header
     text-decoration: overline;
     color: #0065FC;
 }
-
-.aam ,.inscrire
+.aam
 {
     text-decoration: none;
+}
+.inscrire
+{
+    text-decoration: none; 
+}
+.afficher_plus
+{ 
+    text-decoration: none; 
 }
 .pack1
 {
@@ -77,59 +84,91 @@ nav
 .a1
 {
     display: flex;
-    border: solid 1px yellow;  
+    border: solid 1px yellow; 
 }
 
 .a2
 {
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
-
+.a3
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.a4
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.a5
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
 a:hover
 {
    text-decoration: underline;
    color: #DEEBFF;
 }
-.hebergements_a_marseille
+.conteneur
 {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hebergements_a_marseille
+{
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
     border: solid 1px red; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .les_plus_populaires
 {
+    max-width: 20%;
     display: flex;
+    flex-wrap: wrap;
     border: solid 1px red; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .activités_a_marseille
 {
     display: flex;
     border: solid 1px red; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .packfooter
 {
     display: flex;
     border: solid 1px blue;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 .card 
 {
-    width: 15%;
-    height: 15%;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px coins arrondis */
 }
 .card1
 {
-    width: 15%;
-    height: 15%;
+    max-width: 200px;
+    max-height: 200px;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -143,13 +182,14 @@ a:hover
  }
    
 /* Ajoutez du rembourrage à l'intérieur du conteneur de la carte */
-  .container {
+.container {
     padding: 2%;
   }
 
 /* Ajouter des coins arrondis en haut à gauche et en haut à droite de l'image */
-  img {
+img 
+{
     border-radius: 10px 10px 0 0;
-    max-width: 100%;
+    max-width: 50%;
 	height: auto;
-  }
+}
