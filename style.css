@@ -125,7 +125,7 @@ body
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 /* Ajoutez du rembourrage à l'intérieur du conteneur de la carte */
 .card_text
@@ -208,6 +208,7 @@ img
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: solid 1px blue;
 }
 .card
 {
@@ -221,7 +222,7 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .hebergement_img1
@@ -231,7 +232,7 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .hebergement_img2
@@ -241,7 +242,7 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .hebergement_img3
@@ -251,7 +252,7 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .hebergement_img4
@@ -261,7 +262,7 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .hebergement_img5
@@ -271,19 +272,22 @@ img
     background-position: center;
     height: 200px;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     border:solid orangered;
 }
 .afficher_plus
 { 
     text-decoration: none; 
 }
+.cardac
+{
+    width: 400px;
+}
 .activités_a_marseille
 {
     display: flex;
-    border: solid 1px red; 
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid 1px red;
 }
 .activité_img1
 {
