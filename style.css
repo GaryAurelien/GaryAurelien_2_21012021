@@ -35,6 +35,12 @@ header
     padding-left: 2%;
     padding-right: 2%;
 }
+.entete
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .ham
 {
     text-decoration: overline;
@@ -110,20 +116,27 @@ a:hover
 }
 body
 {
-	background-color: #F2F2F2;
+    background-color: #F2F2F2;
+    margin: 2%;
 }
 .conteneur
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 /* Ajoutez du rembourrage à l'intérieur du conteneur de la carte */
-.container 
+.card_text
 {
+    line-height: 30%;
+    border: solid 1px red;
     padding: 2%;
+    width: 250px;
+    background-color: white;
 }
+
 /* Ajouter des coins arrondis en haut à gauche et en haut à droite de l'image */
 img 
 {
@@ -131,15 +144,76 @@ img
     max-width: 50%;
 	height: auto;
 }
-.hebergements_a_marseille
+.les_plus_populaires
 {
-    max-width: 75%;
+    max-width: 400px;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
-    border: solid 1px red;
+    border: solid 1px red; 
     align-items: center;
     justify-content: space-around;
 }
+.cardpo
+{
+    width: 400px;
+    display: flex;
+    border: solid 1px red;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* 5px coins arrondis */
+} 
+.populaire_img1
+{
+    background-image: url("Projet_2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    border:solid orangered;
+}
+.populaire_img2
+{
+    background-image: url("Projet_2_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    border:solid orangered;
+}
+.populaire_img3
+{
+    background-image: url("Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 10px 10px;
+    border:solid orangered;
+}
+.hebergements_a_marseille
+{
+    max-width: 75%;
+    height: 50%;
+    border: solid 1px red;
+    align-items: center;
+}
+
+
+.conteneur_card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+   width: 400px;
+}
+
 .hebergement_img
 {
     background-image: url("Projet_2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -203,53 +277,6 @@ img
 .afficher_plus
 { 
     text-decoration: none; 
-}
-.les_plus_populaires
-{
-    max-width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 1px red; 
-    align-items: center;
-    justify-content: space-around;
-}
-.cardpo1 .cardpo2 .cardpo3
-{
-    display: flex;
-    border: solid 1px red;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 10px; /* 5px coins arrondis */
-} 
-.populaire_img1
-{
-    background-image: url("Projet_2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    border:solid orangered;
-}
-.populaire_img2
-{
-    background-image: url("Projet_2_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    border:solid orangered;
-}
-.populaire_img3
-{
-    background-image: url("Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    border:solid orangered;
 }
 .activités_a_marseille
 {
@@ -324,7 +351,6 @@ img
     border: solid 1px blue;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 2%;
 }
 /* Au survol de la souris, ajoutez une ombre plus profonde */
 .card:hover 
