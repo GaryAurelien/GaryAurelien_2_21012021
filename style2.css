@@ -150,10 +150,10 @@ body {
 
 .card_text {
     line-height: 30%;
-    s border: solid 1px red;
+    border: solid 1px red;
     padding: 2%;
     width: 100%;
-    background-color: #fff
+    background-color: #fff;
 }
 
 img {
