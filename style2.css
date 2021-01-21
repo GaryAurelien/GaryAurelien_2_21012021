@@ -137,12 +137,13 @@ body {
     background-color: #f2f2f2;
     width: 100%;
     height: 100;
+    margin: 1%;
 }
 
 .conteneur {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
     border: solid 1px violet
@@ -222,15 +223,15 @@ img {
 
 .hebergements_a_marseille {
     order: 1;
-    width: 60%;
+    width: 55%;
     height: 50%;
     border: solid 1px red
 }
 
 .conteneur_card {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     border: solid 1px #00f;
 }
 
@@ -325,7 +326,7 @@ img {
     background-image: url(Projet_2_Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 400px;
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     border: solid #ff4500
