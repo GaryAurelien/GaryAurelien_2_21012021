@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: Raleway;
     src: url(Raleway/Raleway-VariableFont_wght.ttf);
 }
@@ -13,10 +13,7 @@ p {
 
 a,
 p {
-    font-size: 14px
-}
-
-a {
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -36,12 +33,11 @@ i {
 }
 
 body {
-    margin: 4%;
+    padding: 2%;
 }
 
 header {
     display: flex;
-    border: solid 1px red;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,7 +47,6 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 30%;
-    border: solid 1px yellow
 }
 
 .hebergements_a_marseille_header {
@@ -66,13 +61,13 @@ header {
 }
 
 .inscrire {
+    color: #0065fc;
     font-weight: bold;
     text-decoration: none;
     font-weight: 700
 }
 
 .recherche {
-    border: solid 1px green;
     height: 60px;
     display: flex;
     align-items: center;
@@ -89,7 +84,6 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 10px 0px 0px 10px;
-    border: solid 1px red;
 }
 
 input {
@@ -103,19 +97,13 @@ input {
     color: white;
     height: 50px;
     border-radius: 0px 10px 10px 0px;
-    border: solid 1px red;
 }
 
 nav {
     display: flex;
-    border: solid 1px red;
 }
 
-.fa-info {
-    margin-right: 1%;
-}
-
-.c4 {
+.icon_filtre {
     background-color: #DEEBFF;
     display: flex;
     justify-content: space-around;
@@ -127,7 +115,7 @@ nav {
 }
 
 .filtre_card h2 {
-    margin-left: 8%;
+    margin-left: 2%;
     padding-right: 8%;
 }
 
@@ -137,11 +125,10 @@ nav {
     width: 60%;
     padding-left: 2%;
     justify-content: space-around;
-    border: solid 1px green;
 }
 
 .filtre_card {
-    border: solid .5px rgb(173, 172, 172);
+    border: solid 1px #D8D8D8;
     border-radius: 30px;
     padding-right: 1%;
     text-decoration: none;
@@ -151,16 +138,34 @@ nav {
     align-items: center
 }
 
+.icon_info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 1%;
+    padding: 0.5%;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    border: solid 1px #D8D8D8;
+}
+
 a:hover {
     text-decoration: underline;
     color: #deebff
 }
 
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .conteneur {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: solid 1px violet
+    width: 100%;
+    justify-content: space-between;
 }
 
 img {
@@ -173,9 +178,7 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 575px;
     width: 100%;
-    border: solid 1px #00f;
 }
 
 .les_plus_populaires {
@@ -185,7 +188,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px red;
+    border-radius: 20px;
 }
 
 .fa-chart-line {
@@ -193,23 +196,20 @@ img {
     align-items: center;
     display: flex;
     justify-items: center;
-    border: solid 1px blue;
 }
 
 .cardpo {
     display: flex;
     flex-wrap: column wrap-reverse;
-    border: solid 1px red;
     margin: 2%;
     height: 150px;
     width: 60%;
+    border-radius: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-    border-radius: 10px
 }
 
 .card_text_po {
     line-height: 100%;
-    border: solid 1px red;
     padding: 2%;
     width: 60%;
     border-radius: 0px 10px 10px 0px;
@@ -223,7 +223,6 @@ img {
     height: 150px;
     width: 40%;
     border-radius: 10px 0px 0px 10px;
-    border: solid 1px #ff4500
 }
 
 .populaire_img_coeur_eau {
@@ -233,24 +232,26 @@ img {
     height: 150px;
     width: 40%;
     border-radius: 10px 0px 0px 10px;
-    border: solid 1px #ff4500
 }
 
 .populaire_img_tout_bleu {
     background-image: url(Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    text-decoration: none;
     height: 150px;
     width: 40%;
     border-radius: 10px 0px 0px 10px;
-    border: solid 1px #ff4500
 }
 
 .hebergements_a_marseille {
     background-color: #f2f2f2;
+    text-decoration: none;
     order: 1;
+    padding-left: 1%;
+    padding-right: 1%;
     width: 60%;
-    border: solid 1px red
+    border-radius: 20px;
 }
 
 .card {
@@ -264,13 +265,11 @@ img {
 .conteneur_card_heb {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: solid 1px #00f;
+    justify-content: space-between;
 }
 
 .card_text {
     line-height: 30%;
-    border: solid 1px red;
     padding: 2%;
     border-radius: 0px 0px 10px 10px;
     background-color: #fff;
@@ -283,7 +282,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .hebergement_img1 {
@@ -293,7 +291,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .hebergement_img2 {
@@ -303,7 +300,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .hebergement_img3 {
@@ -313,7 +309,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .hebergement_img4 {
@@ -323,7 +318,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .hebergement_img5 {
@@ -333,7 +327,6 @@ img {
     height: 120px;
     padding: 2%;
     border-radius: 10px 10px 0 0;
-    border: solid 1px #ff4500
 }
 
 .afficher_plus {
@@ -347,17 +340,16 @@ img {
     justify-content: space-between;
     height: 680px;
     width: 100%;
-    border: solid 1px red
 }
 
 .cardac {
-    margin: 1%;
     box-shadow: 0 4px 8px 0 white;
+    width: 23%;
+    margin-bottom: 2%;
 }
 
 .card_text_a_m {
     line-height: 30%;
-    border: solid 1px red;
     padding: 2%;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
@@ -370,7 +362,6 @@ img {
     flex-wrap: wrap;
     width: 100%;
     height: 600px;
-    border: solid 1px #00f
 }
 
 .activité_img1 {
@@ -379,7 +370,6 @@ img {
     background-position: center;
     height: 500px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .activité_img2 {
@@ -388,7 +378,6 @@ img {
     background-position: center;
     height: 250px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .activité_img3 {
@@ -397,7 +386,6 @@ img {
     background-position: center;
     height: 150px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .activité_img4 {
@@ -406,7 +394,6 @@ img {
     background-position: center;
     height: 500px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .activité_img5 {
@@ -415,7 +402,6 @@ img {
     background-position: center;
     height: 150px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .activité_img6 {
@@ -424,28 +410,68 @@ img {
     background-position: center;
     height: 250px;
     border-radius: 10px 10px 0px 0px;
-    border: solid 1px #ff4500
 }
 
 .packfooter {
     background-color: #f2f2f2;
+    width: 100%;
     display: flex;
-    border: solid 1px #00f;
     align-items: center;
     justify-content: flex-start
 }
 
 .pack1 {
-    border: solid 1px #00f;
+    margin-left: 1%;
     padding-right: 25%
 }
 
 .pack2 {
-    border: solid 1px #00f;
     padding-right: 25%
 }
 
 .pack3 {
-    border: solid 1px #00f;
     padding-right: 15%;
 }
+
+
+/* Media Queries tablette  */
+
+@media screen and (max-width: 1301.12px) {
+    .entete {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 10px;
+    }
+    .conteneur {
+        display: unset;
+    }
+    .les_plus_populaires {
+        width: auto;
+    }
+    .hebergements_a_marseille {
+        width: auto;
+    }
+    .activités_a_marseille {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .card_text_a_m {
+        line-height: 20px;
+    }
+    .packfooter {
+        justify-content: space-between;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
