@@ -1,574 +1,582 @@
-        @font-face {
-        font-family: Raleway;
-        src: url(Raleway/Raleway-VariableFont_wght.ttf)
-    }
-    
-    a,
-    h1,
-    h2,
-    p {
-        font-family: Raleway, Impact, "Arial Black", Arial, Verdana, sans-serif;
-        color: #000
-    }
-    
-    a,
-    p {
-        font-size: 14px;
-        text-decoration: none
-    }
-    
-    h1 {
-        font-weight: 700;
-        font-size: 24px
-    }
-    
-    h2 {
-        font-weight: 700;
-        font-size: 18px;
-        font-weight: 700
-    }
-    
-    i {
-        color: #0065fc
-    }
-    
-    body {
-        padding: 2%
-    }
-    
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between
-    }
-    
+    @font-face {
+    font-family: Raleway;
+    src: url(Raleway/Raleway-VariableFont_wght.ttf)
+}
+
+a,
+h1,
+h2,
+p {
+    font-family: Raleway, Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+a,
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 26px
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
+    font-weight: bold;
+}
+
+i {
+    color: #0065fc
+}
+
+body {
+    padding: 2%
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%
+}
+
+.hebergement_a_marseille_header {
+    border-top: solid 3px #0065fc;
+    color: #0065fc;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.activite_a_marseille_header {
+    color: black;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.inscrire {
+    color: #0065fc;
+    font-weight: 700;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.recherche {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: .5%
+}
+
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px
+}
+
+input {
+    border: none;
+    height: 50px;
+    padding-left: 5%
+}
+
+.button {
+    background-color: #0065fc;
+    color: #fff;
+    height: 50px;
+    border-radius: 0 10px 10px 0
+}
+
+nav {
+    display: flex
+}
+
+.icon_filtre {
+    background-color: #deebff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px
+}
+
+.filtre_card h2 {
+    margin-left: 2%;
+    padding-right: 8%
+}
+
+.filtres {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+    padding-left: 2%;
+    justify-content: space-around
+}
+
+.filtre_card {
+    color: black;
+    border: solid 1px #d8d8d8;
+    border-radius: 30px;
+    padding-right: 1%;
+    text-decoration: none;
+    display: flex;
+    border-left: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icon_info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 1%;
+    padding: .5%;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    border: solid 1px #d8d8d8
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between
+}
+
+img {
+    border-radius: 10px 10px 0 0;
+    max-width: 50%;
+    height: auto
+}
+
+.conteneur_card_po {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.les_plus_populaires {
+    order: 2;
+    background-color: #f2f2f2;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px
+}
+
+.fa-chart-line {
+    padding-left: 30%;
+    align-items: center;
+    display: flex;
+    justify-items: center
+}
+
+.cardpo {
+    display: flex;
+    flex-wrap: column wrap-reverse;
+    margin: 2%;
+    height: 150px;
+    width: 60%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.card_text_po {
+    color: black;
+    line-height: 100%;
+    padding: 2%;
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+}
+
+a.cardpo:link {
+    text-decoration: none;
+}
+
+.populaire_img_soleil_du_matin {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.populaire_img_coeur_eau {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.populaire_img_tout_bleu {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+.populaire_img_coeur_eau,
+.populaire_img_soleil_du_matin,
+.populaire_img_tout_bleu {
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    height: 150px;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.hebergements_a_marseille {
+    background-color: #f2f2f2;
+    text-decoration: none;
+    order: 1;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 60%;
+    border-radius: 20px
+}
+
+.card {
+    width: 30%;
+    margin: 1.5%;
+    box-shadow: 0 4px 4px 0 #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+a.card:link {
+    text-decoration: none;
+}
+
+.conteneur_card_heb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.card_text {
+    color: black;
+    line-height: 60%;
+    padding: 2%;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding-: 3px;
+}
+
+.hebergement_img {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    padding: 2%;
+    border-radius: 10px 10px 0 0
+}
+
+.hebergement_img1 {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.hebergement_img2 {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.hebergement_img3 {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.hebergement_img4 {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.hebergement_img5 {
+    background-image: url(Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.hebergement_img,
+.hebergement_img1,
+.hebergement_img2,
+.hebergement_img3,
+.hebergement_img4,
+.hebergement_img5 {
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    padding: 2%;
+    border-radius: 10px 10px 0 0
+}
+
+.afficher_plus {
+    color: black;
+    text-decoration: none
+}
+
+.activités_a_marseille {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 680px;
+    width: 100%
+}
+
+.cardac {
+    box-shadow: 0 4px 8px 0 #fff;
+    width: 23%;
+    margin-bottom: 2%
+}
+
+.card_text_a_m {
+    color: black;
+    line-height: 30%;
+    padding: 2%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 0 0 10px 10px
+}
+
+.conteneur_card_a_m {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px
+}
+
+.activité_img1 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.activité_img2 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+
+.activité_img3 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+
+.activité_img4 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.activité_img5 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+
+.activité_img6 {
+    background-image: url(Projet_2_Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+
+.activité_img1,
+.activité_img4 {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 10px 10px 0 0
+}
+
+.activité_img3,
+.activité_img5 {
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border-radius: 10px 10px 0 0
+}
+
+.activité_img2,
+.activité_img6 {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 10px 10px 0 0
+}
+
+.packfooter {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.pack1,
+.pack2,
+.pack3 {
+    margin-left: 1%;
+    padding-right: 15%
+}
+
+.a_footer {
+    color: black;
+    text-decoration: none;
+}
+
+.nous_contacter {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Media Queries tablette  */
+
+@media screen and (max-width: 1321px) {
     .entete {
+        width: 50%;
+        justify-content: space-between;
+    }
+    .titre_page {
+        margin-top: 50px;
+    }
+    .nav {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 30%
+        flex-direction: row;
     }
-    
-    .hebergements_a_marseille_header {
-        text-decoration: overline;
-        font-weight: 700;
-        color: #0065fc
-    }
-    
-    .activite_a_marseille_header {
-        font-weight: 700;
-        text-decoration: none
-    }
-    
-    .inscrire {
-        color: #0065fc;
-        font-weight: 700;
-        text-decoration: none;
-        font-weight: 700
-    }
-    
-    .recherche {
-        height: 60px;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        margin-bottom: .5%
-    }
-    
-    .fa-map-marker-alt {
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        height: 50px;
-        width: 50px;
-        border-radius: 10px 0 0 10px
-    }
-    
-    input {
-        border: none;
-        height: 50px;
-        padding-left: 5%
-    }
-    
-    .button {
-        background-color: #0065fc;
-        color: #fff;
-        height: 50px;
-        border-radius: 0 10px 10px 0
-    }
-    
-    nav {
-        display: flex
-    }
-    
-    .icon_filtre {
-        background-color: #deebff;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        height: 50px;
-        width: 50px;
-        border-radius: 30px
-    }
-    
-    .filtre_card h2 {
-        margin-left: 2%;
-        padding-right: 8%
-    }
-    
     .filtres {
-        display: flex;
-        align-items: flex-start;
-        width: 60%;
-        padding-left: 2%;
-        justify-content: space-around
-    }
-    
-    .filtre_card {
-        border: solid 1px #d8d8d8;
-        border-radius: 30px;
-        padding-right: 1%;
-        text-decoration: none;
-        display: flex;
-        border-left: none;
-        justify-content: center;
-        align-items: center
-    }
-    
-    .icon_info {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        margin-right: 1%;
-        padding: .5%;
-        width: 10px;
-        height: 10px;
-        border-radius: 40px;
-        border: solid 1px #d8d8d8
-    }
-    
-    a:hover {
-        text-decoration: underline;
-        color: #deebff
-    }
-    
-    .info {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center
-    }
-    
-    .conteneur {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between
+        justify-content: flex-start;
+        font-size: 10px;
     }
-    
-    img {
-        border-radius: 10px 10px 0 0;
-        max-width: 50%;
-        height: auto
+    .filtre_card {
+        margin: 10px;
     }
-    
-    .conteneur_card_po {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%
+    .conteneur {
+        display: unset;
     }
-    
     .les_plus_populaires {
-        order: 2;
-        background-color: #f2f2f2;
-        width: 35%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        border-radius: 20px
+        width: auto;
     }
-    
-    .fa-chart-line {
-        padding-left: 30%;
-        align-items: center;
-        display: flex;
-        justify-items: center
-    }
-    
-    .cardpo {
-        display: flex;
-        flex-wrap: column wrap-reverse;
-        margin: 2%;
-        height: 150px;
-        width: 60%;
-        border-radius: 10%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2)
-    }
-    
-    .card_text_po {
-        line-height: 100%;
-        padding: 2%;
-        width: 60%;
-        border-radius: 0 10px 10px 0;
-        background-color: #fff
-    }
-    
-    .populaire_img_soleil_du_matin {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 150px;
-        width: 40%;
-        border-radius: 10px 0 0 10px
-    }
-    
-    .populaire_img_coeur_eau {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 150px;
-        width: 40%;
-        border-radius: 10px 0 0 10px
-    }
-    
-    .populaire_img_tout_bleu {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        text-decoration: none;
-        height: 150px;
-        width: 40%;
-        border-radius: 10px 0 0 10px
-    }
-    
     .hebergements_a_marseille {
-        background-color: #f2f2f2;
-        text-decoration: none;
-        order: 1;
-        padding-left: 1%;
-        padding-right: 1%;
-        width: 60%;
-        border-radius: 20px
+        width: auto;
     }
-    
-    .card {
-        width: 30%;
-        margin: 1.5%;
-        box-shadow: 0 4px 4px 0 #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-        border-radius: 10px
-    }
-    
-    .conteneur_card_heb {
+    .activités_a_marseille {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between
+        width: auto;
     }
-    
-    .card_text {
-        line-height: 30%;
-        padding: 2%;
-        border-radius: 0 0 10px 10px;
-        background-color: #fff
+    .card_text_a_m {
+        line-height: 20px;
     }
-    
-    .hebergement_img {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .hebergement_img1 {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .hebergement_img2 {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .hebergement_img3 {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .hebergement_img4 {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .hebergement_img5 {
-        background-image: url(Projet_2_Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 120px;
-        padding: 2%;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .afficher_plus {
-        text-decoration: none
-    }
-    
-    .activités_a_marseille {
-        order: 3;
+    .packfooter {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 680px;
-        width: 100%
-    }
-    
-    .cardac {
-        box-shadow: 0 4px 8px 0 #fff;
-        width: 23%;
-        margin-bottom: 2%
-    }
-    
-    .card_text_a_m {
-        line-height: 30%;
-        padding: 2%;
-        background-color: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-        border-radius: 0 0 10px 10px
-    }
-    
-    .conteneur_card_a_m {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 600px
-    }
-    
-    .activité_img1 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .activité_img2 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 250px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .activité_img3 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 150px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .activité_img4 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .activité_img5 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 150px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .activité_img6 {
-        background-image: url(Projet_2_Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 250px;
-        border-radius: 10px 10px 0 0
-    }
-    
-    .packfooter {
-        background-color: #f2f2f2;
-        width: 100%;
-        display: flex;
+        width: auto;
         align-items: center;
-        justify-content: flex-start
+        align-content: center;
     }
-    
-    .pack1 {
-        margin-left: 1%;
-        padding-right: 25%
-    }
-    
-    .pack2 {
-        padding-right: 25%
-    }
-    
+    .pack1,
+    .pack2,
     .pack3 {
-        padding-right: 15%
+        margin-top: 15px;
+        line-height: 20px;
     }
-    /* Media Queries tablette  */
-    
-    @media screen and (max-width: 1321px) {
+    @media screen and (max-width: 738px) {
+        a,
+        p {
+            font-size: 18px;
+            text-decoration: none;
+        }
         .entete {
-            width: 50%;
-            justify-content: space-between;
-        }
-        .titre_page {
-            margin-top: 50px;
-        }
-        .nav {
+            width: 75%;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly
+        }
+        .recherche {
+            width: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .input {
+            width: auto;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            height: auto;
+            justify-content: flex-start;
+            margin-bottom: 10%;
         }
         .filtres {
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .filtre_card {
+            margin: 3px;
+        }
+        .cardpo {
+            width: 100%;
+            height: auto;
+        }
+        .conteneur_card_po {
+            width: auto;
+            height: auto;
+        }
+        .hebergements_a_marseille {
+            height: auto;
+            width: auto;
+        }
+        .conteneur_card_heb {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+        }
+        .card {
+            width: 100%;
+            height: auto;
+        }
+        .activités_a_marseille {
+            height: auto;
+            width: auto;
+        }
+        .conteneur_card_a_m {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            justify-content: flex-start;
-            font-size: 10px;
+            height: auto;
         }
-        .filtre_card {
-            margin: 10px;
+        .cardac {
+            width: 100%;
         }
-        .conteneur {
-            display: unset;
-        }
-        .les_plus_populaires {
-            width: auto;
-        }
-        .hebergements_a_marseille {
-            width: auto;
-        }
-        .activités_a_marseille {
-            display: flex;
-            flex-wrap: wrap;
-            width: auto;
-        }
-        .card_text_a_m {
-            line-height: 20px;
+        .activité_img1,
+        .activité_img2,
+        .activité_img3,
+        .activité_img4,
+        .activité_img5,
+        .activité_img6 {
+            height: 150px;
         }
         .packfooter {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: auto;
-            align-items: center;
-            align-content: center;
+            width: 100%;
         }
         .pack1,
         .pack2,
         .pack3 {
-            margin-top: 15px;
-            line-height: 20px;
+            width: 90%;
         }
-        @media screen and (max-width: 736px) {
-            a,
-            p {
-                font-size: 8px;
-                text-decoration: none;
-            }
-            .entete {
-                width: 75%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly
-            }
-            .recherche {
-                width: auto;
-                margin-top: 10%;
-                margin-bottom: 10%;
-            }
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                width: auto;
-                height: auto;
-                justify-content: flex-start;
-                margin-bottom: 10%;
-            }
-            .filtres {
-                width: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            .filtre_card {
-                margin: 3px;
-            }
-            .cardpo {
-                width: 100%;
-                height: auto;
-            }
-            .conteneur_card_po {
-                width: auto;
-                height: auto;
-            }
-            .hebergements_a_marseille {
-                height: auto;
-                width: auto;
-            }
-            .conteneur_card_heb {
-                display: flex;
-                flex-wrap: wrap;
-                height: auto;
-            }
-            .card {
-                width: 100%;
-                height: auto;
-            }
-            .activités_a_marseille {
-                height: auto;
-                width: auto;
-            }
-            .conteneur_card_a_m {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                height: auto;
-            }
-            .cardac {
-                width: 100%;
-            }
-            .activité_img1,
-            .activité_img2,
-            .activité_img3,
-            .activité_img4,
-            .activité_img5,
-            .activité_img6 {
-                height: 150px;
-            }
-            .packfooter {
-                width: 100%;
-            }
-            .pack1,
-            .pack2,
-            .pack3 {
-                width: 90%;
-            }
-        }
+    }
