@@ -91,6 +91,7 @@ align-items: center;
 align-content: center;
 margin-bottom: .5%;
 margin-left: 2%;
+margin-top: 0.5%;
 }
 
 .fa-map-marker-alt {
@@ -160,6 +161,8 @@ align-items: flex-start;
 width: 60%;
 padding-left: 2%;
 justify-content: space-around;
+margin-top: 1%;
+margin-bottom: 1%;
 }
 
 .filtre_card {
@@ -209,6 +212,7 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 margin-left: 2%;
+margin-bottom: 1%;
 }
 
 /* Conteneur des trois groupe de card (utilisation Flexbox) */
@@ -247,7 +251,11 @@ justify-content: center;
 align-items: center;
 border-radius: 20px;
 }
-
+.h1_les_populaires {
+display: flex;
+justify-content: center;
+width: 100%;
+}
 .fa-chart-line {
 padding-left: 30%;
 align-items: center;
@@ -527,6 +535,11 @@ display: unset;
 }
 .les_plus_populaires {
 width: 100%;
+display: flex;
+flex-direction: column;
+}
+.fa-chart-line {
+    padding-left: 175px;
 }
 .conteneur_card_po{
     width: auto;
