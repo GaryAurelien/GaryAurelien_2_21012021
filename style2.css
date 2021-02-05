@@ -666,6 +666,7 @@ display: flex;
 justify-content: start;
 width: auto;
 border-radius: 0;
+margin-right: 0;
 }
 .fa-chart-line {
 padding-left: 20%;
