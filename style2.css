@@ -582,6 +582,16 @@ font-size: 18px;
 text-decoration: none;
 }
 
+a:hover {
+text-decoration: none;
+transform: none;
+}
+    
+.cardpo:hover,
+.card:hover {
+transform: none;
+}
+    
 .titre_page,
 .nav,
 .recherche,
