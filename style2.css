@@ -344,6 +344,7 @@ a.card:link {
     color: black;
     line-height: 60%;
     padding: 2%;
+    padding-bottom: 15px;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
 }
