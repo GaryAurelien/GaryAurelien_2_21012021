@@ -199,7 +199,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-.cardpo:hover,
 .card:hover {
     transform: rotate(10deg);
 }
@@ -294,10 +293,6 @@ img {
     width: 55%;
     border-radius: 0 10px 10px 0;
     background-color: #fff;
-}
-
-a.cardpo:link {
-    text-decoration: none;
 }
 
 .populaire_img_soleil_du_matin {
@@ -413,6 +408,10 @@ a.card:link {
     box-shadow: 0 4px 8px 0 #fff;
     width: 23%;
     margin-bottom: 2%;
+}
+
+a.cardac:link {
+    text-decoration: none;
 }
 
 .card_text_a_m {
