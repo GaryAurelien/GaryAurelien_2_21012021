@@ -798,4 +798,11 @@ nav {
 }
 }
 
+@media screen and (min-width: 2193px) {
 
+    .conteneur_card_a_m{
+        height: 825px;
+    }
+
+}
+}
